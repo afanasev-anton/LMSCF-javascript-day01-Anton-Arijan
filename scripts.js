@@ -23,7 +23,7 @@ var cars=["Tesla","Audi","Renault","Volvo","Mazda","Fiat","Ferrari"];
 
 console.log(cars.sort());
 
-//document.getElementById("print").externalHTML = cars;
+document.getElementById("print").innerHTML = cars;
 
 //fruits example
 var fruits=["Apple","Banana","Kiwi"];
@@ -39,3 +39,29 @@ console.log(animals.sort());
 animals[3]="Cat";
 console.log(animals);
 console.log(animals.sort());
+
+//exersize 3
+var myString = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+
+var text = "";
+var length = myString.length;
+console.log(length);
+
+do {
+var posOfslash = myString.search("/");
+text = text + myString.slice(0,posOfslash) + "<br>";
+myString = myString.slice(posOfslash+1,myString.length);
+console.log(myString.length);
+} while (myString.length>posOfslash)
+document.getElementById("fruit").innerHTML = text;
+
+myString = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+var arr = myString.split("/");
+var text = "";
+var i;
+for (i = 0; i < arr.length; i++) {
+  text += arr[i] + "<br>"
+}
+document.getElementById("fruit_1").innerHTML = text;
+
+//console.log(myString.length);
