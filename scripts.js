@@ -25,3 +25,17 @@ console.log(cars.sort());
 
 //document.getElementById("print").externalHTML = cars;
 
+//fruits example
+var fruits=["Apple","Banana","Kiwi"];
+fruits[3]="Orange";
+console.log(fruits);
+
+console.log(fruits.slice(0,3));
+
+//animals example
+var animals=["Monkey","Horse","Dog"];
+console.log(animals);
+console.log(animals.sort());
+animals[3]="Cat";
+console.log(animals);
+console.log(animals.sort());
